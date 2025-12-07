@@ -104,6 +104,17 @@ function App() {
               Listede bulunan hiçbir firma reklam veya referans amaçlı yazılmamıştır. 
               Bilgilendirme amaçlıdır. Liste sıralaması tamamen rastgele yapılmıştır.
             </p>
+            <p className="text-slate-500 text-xs">
+              Kaynak:{' '}
+              <a
+                href="https://docs.google.com/spreadsheets/d/1NhCFUEdG6DuS1zxCTGYXNgiF9PJRT02HIj-Bh-a6y7M/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 hover:text-emerald-300 underline underline-offset-2 transition-colors"
+              >
+                Türkiye'de Orijinal TCG Satan Yerler (Google Sheets)
+              </a>
+            </p>
             <div className="pt-4">
               <a
                 href="https://buymeacoffee.com/pokezed"
