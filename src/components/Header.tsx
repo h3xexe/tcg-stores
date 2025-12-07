@@ -23,7 +23,7 @@ export function Header() {
           
           {/* Title */}
           <h1 className="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 tracking-tight">
-            TCG Scope
+            TCG Türkiye
           </h1>
           
           {/* Subtitle */}
