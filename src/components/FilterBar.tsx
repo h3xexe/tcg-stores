@@ -142,8 +142,9 @@ export function FilterBar({
                           ? `${group.color}30`
                           : `${group.color}15`,
                         color: group.color,
-                        borderColor: selectedProducts.includes(product.key) ? group.color : 'transparent',
-                        ringColor: selectedProducts.includes(product.key) ? group.color : 'transparent',
+                        boxShadow: selectedProducts.includes(product.key) 
+                          ? `0 0 0 2px var(--tw-ring-offset-color, #1e293b), 0 0 0 4px ${group.color}` 
+                          : 'none',
                       }}
                     >
                       {product.label.replace(group.label + ' ', '').replace('Pokémon ', '').replace('One Piece ', '').replace('Riftbound ', '')}
