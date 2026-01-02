@@ -24,6 +24,7 @@ export interface Store {
   note?: string;
   latitude?: number;
   longitude?: number;
+  mapsUrl?: string;
 }
 
 export type ProductKey = keyof StoreProducts;

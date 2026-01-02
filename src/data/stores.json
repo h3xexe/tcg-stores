@@ -21,7 +21,8 @@
     "city": "İstanbul",
     "hasPhysicalStore": true,
     "latitude": 40.988528,
-    "longitude": 29.1380078
+    "longitude": 29.1380078,
+    "mapsUrl": "https://www.google.com/maps/place/Lemon+Cards/@40.988358,29.1353846,17z/data=!3m1!4b1!4m6!3m5!1s0x14cac91f5e4cd3b9:0x24e26c4b4f27e54a!8m2!3d40.988358!4d29.1379649!16s%2Fg%2F11ybz958ns?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 2,
@@ -67,7 +68,8 @@
     "city": "Ankara",
     "hasPhysicalStore": true,
     "latitude": 39.92385383576981,
-    "longitude": 32.80543244468891
+    "longitude": 32.80543244468891,
+    "mapsUrl": "https://www.google.com/maps/place/Kolektif+House,+Be%C5%9Ftepe,+31.+Sk.+No:+2%2FB+D:104,+06560+Yenimahalle%2FAnkara/@39.92322,32.8026232,16.74z/data=!4m5!3m4!1s0x14d348cb8047548b:0x2ac04f423889a7a8!8m2!3d39.923298!4d32.8055393?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 4,
@@ -87,9 +89,12 @@
       "yugioh": true
     },
     "website": "https://cardhouse.com.tr/",
-    "location": "İstanbul Etiler ve Suadiye",
+    "location": "Card House Etiler",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 41.0739231,
+    "longitude": 29.0192179,
+    "mapsUrl": "https://www.google.com/maps/place/Card+House/@41.0739231,29.0166376,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab72e0b1425af:0xa2ae9eba2ec2aa4e!8m2!3d41.0739231!4d29.0192179!16s%2Fg%2F11yd6hmcv7?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 5,
@@ -111,7 +116,10 @@
     "website": "https://www.karakterci.com/",
     "location": "İstanbul Şahrayıcedit",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.9813868,
+    "longitude": 29.0880045,
+    "mapsUrl": "https://www.google.com/maps/place/SAGENTECH+-+KARAKTERC%C4%B0/@40.9813868,29.0854242,17z/data=!3m1!4b1!4m6!3m5!1s0x14cacf60eba8d23f:0xb255733297ee69f9!8m2!3d40.9813868!4d29.0880045!16s%2Fg%2F1tf4ztcj?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 6,
@@ -155,7 +163,10 @@
     "website": "https://www.gorillacustomcards.com/",
     "location": "İstanbul ACR Loft",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 41.1089642,
+    "longitude": 29.1130284,
+    "mapsUrl": "https://www.google.com/maps/place/AcrLoft/@41.1089642,29.0965489,15z/data=!4m10!1m2!2m1!1zQWNyTG9mdCBUaWNhcmV0IE1lcmtlemkgQWNhcmxhciBNYWhhbGxlc2ksIMWeZW5rYXlhIMOHxLFrbWF6xLEgU29rYWsgTm86IDIgxLDDpyBLYXDEsSBObzogMTEgQmV5a296IMSwc3RhbmJ1bA!3m6!1s0x14caccbaee18f8cb:0x3cd900f5bc24979e!8m2!3d41.1089642!4d29.1130284!15sCm1BY3JMb2Z0IFRpY2FyZXQgTWVya2V6aSBBY2FybGFyIE1haGFsbGVzaSwgxZ5lbmtheWEgw4fEsWttYXrEsSBTb2thayBObzogMiDEsMOnIEthcMSxIE5vOiAxMSBCZXlrb3ogxLBzdGFuYnVsWmoiaGFjcmxvZnQgdGljYXJldCBtZXJrZXppIGFjYXJsYXIgbWFoYWxsZXNpIMWfZW5rYXlhIMOnxLFrbWF6xLEgc29rYWsgbm8gMiBpw6cga2FwxLEgbm8gMTEgYmV5a296IGlzdGFuYnVskgEPc2hvcHBpbmdfY2VudGVymgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5QYUMxSVJWcFJFQUXgAQD6AQQIABA1!16s%2Fg%2F1ptyw34cl?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 8,
@@ -199,7 +210,10 @@
     "website": "https://www.storecuttlefish.com/",
     "location": "İstanbul Kadıköy",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.9837928,
+    "longitude": 29.0262302,
+    "mapsUrl": "https://www.google.com/maps/place/Cuttlefish+Store/@40.9837913,29.0077977,15z/data=!3m2!4b1!5s0x14cab861066c3c37:0x6feb439f72e1aba0!4m6!3m5!1s0x14cab861066ee863:0x3d5a95931b4a5fff!8m2!3d40.9837928!4d29.0262302!16s%2Fg%2F11cnpj71_8?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 10,
@@ -223,7 +237,8 @@
     "city": "İstanbul",
     "hasPhysicalStore": true,
     "latitude": 40.98877,
-    "longitude": 29.02566
+    "longitude": 29.02566,
+    "mapsUrl": "https://www.google.com/maps/place/Goblin+Oyun+Kul%C3%BCb%C3%BC/@40.988771,29.0230857,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab8667b05b979:0xcfe94a1152347664!8m2!3d40.988771!4d29.025666!16s%2Fg%2F11bzyw3ftx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 11,
@@ -247,7 +262,8 @@
     "city": "İstanbul",
     "hasPhysicalStore": true,
     "latitude": 41.04523,
-    "longitude": 29.00147
+    "longitude": 29.00147,
+    "mapsUrl": "https://www.google.com/maps/place/Pegasus+Oyuncak/@41.0448572,28.9998062,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab7a04b3b174f:0xdf23515000b603b!8m2!3d41.0448572!4d29.0023865!16s%2Fg%2F1tdhvv8q?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 12,
@@ -271,7 +287,8 @@
     "city": "Ankara",
     "hasPhysicalStore": true,
     "latitude": 39.89494,
-    "longitude": 32.8581
+    "longitude": 32.8581,
+    "mapsUrl": "https://www.google.com/maps/place/Misthios+Store/@39.8949092,32.8555009,17z/data=!3m1!4b1!4m6!3m5!1s0x14d34ff218919e73:0x2d8840bdb13caa10!8m2!3d39.8949092!4d32.8580812!16s%2Fg%2F11rsrh19zz?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 13,
@@ -297,7 +314,7 @@
   },
   {
     "id": 14,
-    "name": "Overgame",
+    "name": "Overgame (Akasya AVM)",
     "products": {
       "pokemonEN": false,
       "pokemonJP": false,
@@ -313,9 +330,12 @@
       "yugioh": true
     },
     "website": "https://www.overgameweb.com/",
-    "location": "İstanbul Akasya AVM ve Kanyon AVM",
+    "location": "İstanbul Akasya AVM",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 41.0019366,
+    "longitude": 29.0547862,
+    "mapsUrl": "https://www.google.com/maps/place/OverGame/@41.0400302,28.9910101,13z/data=!3m1!5s0x14cac7fa86531d23:0xe1db423269a8d855!4m10!1m2!2m1!1sovergame!3m6!1s0x14cac73e906bebf5:0xbc7a879d1b2c0909!8m2!3d41.0019366!4d29.0547862!15sCghvdmVyZ2FtZVoKIghvdmVyZ2FtZZIBEHZpZGVvX2dhbWVfc3RvcmXgAQA!16s%2Fg%2F11gmyh4f1s?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 15,
@@ -337,7 +357,10 @@
     "website": "https://gizala.com.tr/",
     "location": "İstanbul Sefaköy",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 41.0030188,
+    "longitude": 28.8015787,
+    "mapsUrl": "https://www.google.com/maps/place/gizala/@41.0030188,28.7989984,17z/data=!3m1!4b1!4m6!3m5!1s0x14caa476cd886d51:0x83b7efdee80feee8!8m2!3d41.0030188!4d28.8015787!16s%2Fg%2F11b7q7jl4d?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 16,
@@ -403,7 +426,10 @@
     "website": "https://houseofcollectibles.com.tr/",
     "location": "İzmir Kemalpaşa",
     "city": "İzmir",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 38.4548658,
+    "longitude": 27.465477,
+    "mapsUrl": "https://www.google.com/maps/place/House+of+Collectibles/@38.4548658,25.356102,8z/data=!4m10!1m2!2m1!1sHouse+of+Collectibles!3m6!1s0x14b97d07c80e9727:0xd5d10b71f6b32521!8m2!3d38.4548658!4d27.465477!15sChVIb3VzZSBvZiBDb2xsZWN0aWJsZXNaFyIVaG91c2Ugb2YgY29sbGVjdGlibGVzkgESY29sbGVjdGlibGVzX3N0b3JlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5UVU5CT1Y5RVVFaDNFQUXgAQD6AQQIABAk!16s%2Fg%2F11wjp_dd1v?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 19,
@@ -493,7 +519,10 @@
     "website": "https://www.kartolog.com/tr",
     "location": "İstanbul Erenköy",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.9709151,
+    "longitude": 29.0799641,
+    "mapsUrl": "https://www.google.com/maps/place/Kartolog/@40.9709151,29.0773838,17z/data=!3m1!4b1!4m6!3m5!1s0x14cac762473f9027:0xd4a4e06592f90512!8m2!3d40.9709151!4d29.0799641!16s%2Fg%2F11zk3fq43g?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 23,
@@ -515,7 +544,10 @@
     "website": "https://paralelevren.istanbul/",
     "location": "İstanbul Bağdat Caddesi",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.9691765,
+    "longitude": 29.0633995,
+    "mapsUrl": "https://www.google.com/maps/place/Paralel+Evren+Comics/@40.9691765,29.0608192,17z/data=!3m1!4b1!4m6!3m5!1s0x14cac70e8cf1080b:0x5e7e9e5d8224bb6a!8m2!3d40.9691765!4d29.0633995!16s%2Fg%2F11bwnd63xg?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 24,
@@ -535,9 +567,12 @@
       "yugioh": false
     },
     "website": "https://www.gameland.com.tr/",
-    "location": "Ankara Çankaya ve Yenimahalle",
+    "location": "Ankara Çankaya",
     "city": "Ankara",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 39.9620815,
+    "longitude": 32.7702165,
+    "mapsUrl": "https://www.google.com/maps/place/Gameland/@39.9620815,32.6981187,13z/data=!4m10!1m2!2m1!1sGameland+%C3%A7ankaya!3m6!1s0x14d3490ea0505439:0xfafd3fd352091f47!8m2!3d39.9620815!4d32.7702165!15sChFHYW1lbGFuZCDDp2Fua2F5YVoTIhFnYW1lbGFuZCDDp2Fua2F5YZIBEHZpZGVvX2dhbWVfc3RvcmXgAQA!16s%2Fg%2F11dxqkrh_r?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 25,
@@ -559,7 +594,10 @@
     "website": "https://www.carddunyasi.com/",
     "location": "İstanbul Bakırköy",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.9776727,
+    "longitude": 28.8748238,
+    "mapsUrl": "https://www.google.com/maps/place/Cardd%C3%BCnyas%C4%B1/@40.9776727,24.6560738,7z/data=!4m10!1m2!2m1!1zQ2FyZCBEw7xueWFzxLE!3m6!1s0x14cabdc8184225f1:0x98f3d93a0db95978!8m2!3d40.9776727!4d28.8748238!15sCg5DYXJkIETDvG55YXPEsVoQIg5jYXJkIGTDvG55YXPEsZIBC2hvYmJ5X3N0b3JlmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxR1YyVkhPWGRPUkZKTFZXNXdjMlZWV2xKWmJtaDRUVmN4V1ZKRlJSQULgAQD6AQQIJhAj!16s%2Fg%2F11ynt3qc79?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 26,
@@ -581,7 +619,10 @@
     "website": "https://www.instagram.com/tcgalaxium/",
     "location": "İstanbul Sefaköy",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.9995764,
+    "longitude": 28.7986047,
+    "mapsUrl": "https://www.google.com/maps/place/Galaxium/@40.9995764,28.7960244,17z/data=!3m1!4b1!4m6!3m5!1s0x14caa306f9e80f43:0xb692c3f850c66104!8m2!3d40.9995764!4d28.7986047!16s%2Fg%2F11mm6lps19?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 27,
@@ -671,32 +712,8 @@
     "city": "Ankara",
     "hasPhysicalStore": true,
     "latitude": 39.91266,
-    "longitude": 32.85705
-  },
-  {
-    "id": 31,
-    "name": "Oyun Mühendisi Cafe",
-    "products": {
-      "pokemonEN": false,
-      "pokemonJP": false,
-      "pokemonKR": false,
-      "pokemonCN": false,
-      "onePieceEN": false,
-      "onePieceJP": false,
-      "mtg": true,
-      "riftboundEN": false,
-      "riftboundCN": false,
-      "lorcana": false,
-      "topps": false,
-      "yugioh": false
-    },
-    "website": null,
-    "location": "İstanbul Kadıköy Moda",
-    "city": "İstanbul",
-    "hasPhysicalStore": true,
-    "latitude": 40.98741,
-    "longitude": 29.02454,
-    "note": "MTG odaklı kafe"
+    "longitude": 32.85705,
+    "mapsUrl": "https://www.google.com/maps/place/Pegasus+Oyuncak/@39.9124164,32.8545586,17z/data=!3m1!4b1!4m6!3m5!1s0x14d34fa891e5d497:0xd1cad941ad393b90!8m2!3d39.9124164!4d32.8571335!16s%2Fg%2F11cp7mwkd1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 32,
@@ -719,9 +736,10 @@
     "location": "Antalya Muratpaşa",
     "city": "Antalya",
     "hasPhysicalStore": true,
-    "latitude": 36.888697,
-    "longitude": 30.71944269999999,
-    "note": "MTG odaklı kafe"
+    "latitude": 36.8882961,
+    "longitude": 30.7216033,
+    "note": "MTG odaklı kafe",
+    "mapsUrl": "https://www.google.com/maps/place/LORIEN+COFFEE/@36.8882961,30.7190284,17z/data=!3m1!4b1!4m6!3m5!1s0x14c3855177b53c7f:0x66579cfef5a0b10!8m2!3d36.8882961!4d30.7216033!16s%2Fg%2F11h4g37d4v?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     "id": 33,
@@ -744,8 +762,84 @@
     "location": "İzmir Karşıyaka",
     "city": "İzmir",
     "hasPhysicalStore": true,
-    "latitude": 38.46249,
-    "longitude": 27.12618,
-    "note": "MTG odaklı kulüp"
+    "latitude": 38.4597477,
+    "longitude": 27.1153967,
+    "note": "MTG odaklı kulüp",
+    "mapsUrl": "https://www.google.com/maps/place/d20+Masa%C3%BCst%C3%BC+Oyun+Kul%C3%BCb%C3%BC/@38.4597477,27.1128218,17z/data=!3m1!4b1!4m6!3m5!1s0x14bbd9b7d3ae39ab:0x7adbc9c209b74e36!8m2!3d38.4597477!4d27.1153967!16s%2Fg%2F11bx8hn1zt?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "id": 34,
+    "name": "Card House (Suadiye)",
+    "products": {
+      "pokemonEN": true,
+      "pokemonJP": true,
+      "pokemonKR": null,
+      "pokemonCN": true,
+      "onePieceEN": true,
+      "onePieceJP": true,
+      "mtg": true,
+      "riftboundEN": true,
+      "riftboundCN": false,
+      "lorcana": true,
+      "topps": true,
+      "yugioh": true
+    },
+    "website": "https://cardhouse.com.tr/",
+    "location": "Card House Suadiye",
+    "city": "İstanbul",
+    "hasPhysicalStore": true,
+    "latitude": 40.9602929,
+    "longitude": 29.091188,
+    "mapsUrl": "https://www.google.com/maps/place/Card+House+Suadiye/@40.9602929,29.0886131,17z/data=!3m1!4b1!4m6!3m5!1s0x14cac79fba4feee5:0xa0febc9681349d53!8m2!3d40.9602929!4d29.091188!16s%2Fg%2F11mrdk1tqj?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "id": 35,
+    "name": "Overgame (Kanyon AVM)",
+    "products": {
+      "pokemonEN": false,
+      "pokemonJP": false,
+      "pokemonKR": false,
+      "pokemonCN": false,
+      "onePieceEN": true,
+      "onePieceJP": false,
+      "mtg": true,
+      "riftboundEN": true,
+      "riftboundCN": false,
+      "lorcana": true,
+      "topps": false,
+      "yugioh": true
+    },
+    "website": "https://www.overgameweb.com/",
+    "location": "Kanyon AVM",
+    "city": "İstanbul",
+    "hasPhysicalStore": true,
+    "latitude": 41.0781386,
+    "longitude": 29.009805,
+    "mapsUrl": "https://www.google.com/maps/place/OverGame/@41.0400303,28.9910959,13z/data=!3m1!5s0x14cab65d5610e819:0x389e307fb0143abe!4m10!1m2!2m1!1sOvergame+(AVM)!3m6!1s0x14cab678d7800e09:0x109f9f33210b2044!8m2!3d41.0781386!4d29.009805!15sCg5PdmVyZ2FtZSAoQVZNKVoOIgxvdmVyZ2FtZSBhdm2SARB2aWRlb19nYW1lX3N0b3JlmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJ0TTNRdFpHbG5SUkFC4AEA-gEECAAQOw!16s%2Fg%2F1vq897kx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    "id": 36,
+    "name": "Gameland (Yenimahalle)",
+    "products": {
+      "pokemonEN": true,
+      "pokemonJP": false,
+      "pokemonKR": false,
+      "pokemonCN": false,
+      "onePieceEN": false,
+      "onePieceJP": false,
+      "mtg": false,
+      "riftboundEN": false,
+      "riftboundCN": false,
+      "lorcana": false,
+      "topps": false,
+      "yugioh": false
+    },
+    "website": "https://www.gameland.com.tr/",
+    "location": "Yenimahalle",
+    "city": "Ankara",
+    "hasPhysicalStore": true,
+    "latitude": 39.9620815,
+    "longitude": 32.7702165,
+    "mapsUrl": "https://www.google.com/maps/place/Gameland/@39.9620815,32.7676416,17z/data=!3m1!4b1!4m6!3m5!1s0x14d3490ea0505439:0xfafd3fd352091f47!8m2!3d39.9620815!4d32.7702165!16s%2Fg%2F11dxqkrh_r?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
   }
 ]
