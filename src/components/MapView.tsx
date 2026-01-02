@@ -44,14 +44,24 @@ interface MapViewProps {
   userLocation: Coordinates | null;
 }
 
+// Zoom level 11 shows approximately 30km radius around center
+const NEARBY_ZOOM_LEVEL = 11;
+
 // Component to handle map bounds
 function MapBounds({ stores, userLocation }: { stores: StoreWithDistance[]; userLocation: Coordinates | null }) {
   const map = useMap();
 
   useEffect(() => {
+    // If user location is available, center on user with 30km radius view
+    if (userLocation) {
+      map.setView([userLocation.latitude, userLocation.longitude], NEARBY_ZOOM_LEVEL);
+      return;
+    }
+
+    // Otherwise, fit all stores or show Turkey
     const storesWithCoords = stores.filter((s) => s.latitude && s.longitude);
 
-    if (storesWithCoords.length === 0 && !userLocation) {
+    if (storesWithCoords.length === 0) {
       // Default to Turkey center
       map.setView([39.0, 35.0], 6);
       return;
@@ -64,10 +74,6 @@ function MapBounds({ stores, userLocation }: { stores: StoreWithDistance[]; user
         bounds.extend([store.latitude, store.longitude]);
       }
     });
-
-    if (userLocation) {
-      bounds.extend([userLocation.latitude, userLocation.longitude]);
-    }
 
     if (bounds.isValid()) {
       map.fitBounds(bounds, { padding: [50, 50], maxZoom: 13 });
