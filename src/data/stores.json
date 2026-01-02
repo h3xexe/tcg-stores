@@ -19,7 +19,9 @@
     "website": "https://lemoncards.com.tr/",
     "location": "İstanbul Ataşehir",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.988528,
+    "longitude": 29.1380078
   },
   {
     "id": 2,
@@ -61,9 +63,11 @@
       "yugioh": true
     },
     "website": "https://www.kollektit.co/",
-    "location": "Yakında Ankara'da",
+    "location": "Ankara Yenimahalle",
     "city": "Ankara",
-    "hasPhysicalStore": false
+    "hasPhysicalStore": true,
+    "latitude": 39.92385383576981,
+    "longitude": 32.80543244468891
   },
   {
     "id": 4,
@@ -217,7 +221,9 @@
     "website": "https://www.goblin-store.com/",
     "location": "İstanbul Kadıköy",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 40.98877,
+    "longitude": 29.02566
   },
   {
     "id": 11,
@@ -239,7 +245,9 @@
     "website": "https://www.pegasusoyuncak.com/",
     "location": "İstanbul Beşiktaş",
     "city": "İstanbul",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 41.04523,
+    "longitude": 29.00147
   },
   {
     "id": 12,
@@ -258,10 +266,12 @@
       "topps": false,
       "yugioh": true
     },
-    "website": "https://www.instagram.com/misthiosstore/?hl=en",
+    "website": "https://www.misthios.com.tr/",
     "location": "Ankara Tunalı",
     "city": "Ankara",
-    "hasPhysicalStore": true
+    "hasPhysicalStore": true,
+    "latitude": 39.89494,
+    "longitude": 32.8581
   },
   {
     "id": 13,
@@ -638,6 +648,104 @@
     "location": null,
     "city": null,
     "hasPhysicalStore": false
+  },
+  {
+    "id": 30,
+    "name": "Pegasus Oyuncak Ankara",
+    "products": {
+      "pokemonEN": true,
+      "pokemonJP": false,
+      "pokemonKR": false,
+      "pokemonCN": false,
+      "onePieceEN": true,
+      "onePieceJP": false,
+      "mtg": true,
+      "riftboundEN": true,
+      "riftboundCN": false,
+      "lorcana": true,
+      "topps": false,
+      "yugioh": true
+    },
+    "website": "https://www.pegasusoyuncak.com/",
+    "location": "Ankara Bestekar Sokak",
+    "city": "Ankara",
+    "hasPhysicalStore": true,
+    "latitude": 39.91266,
+    "longitude": 32.85705
+  },
+  {
+    "id": 31,
+    "name": "Oyun Mühendisi Cafe",
+    "products": {
+      "pokemonEN": false,
+      "pokemonJP": false,
+      "pokemonKR": false,
+      "pokemonCN": false,
+      "onePieceEN": false,
+      "onePieceJP": false,
+      "mtg": true,
+      "riftboundEN": false,
+      "riftboundCN": false,
+      "lorcana": false,
+      "topps": false,
+      "yugioh": false
+    },
+    "website": null,
+    "location": "İstanbul Kadıköy Moda",
+    "city": "İstanbul",
+    "hasPhysicalStore": true,
+    "latitude": 40.98741,
+    "longitude": 29.02454,
+    "note": "MTG odaklı kafe"
+  },
+  {
+    "id": 32,
+    "name": "Lorien Coffee",
+    "products": {
+      "pokemonEN": false,
+      "pokemonJP": false,
+      "pokemonKR": false,
+      "pokemonCN": false,
+      "onePieceEN": false,
+      "onePieceJP": false,
+      "mtg": true,
+      "riftboundEN": false,
+      "riftboundCN": false,
+      "lorcana": false,
+      "topps": false,
+      "yugioh": false
+    },
+    "website": "https://www.instagram.com/loriencoffee/",
+    "location": "Antalya Muratpaşa",
+    "city": "Antalya",
+    "hasPhysicalStore": true,
+    "latitude": 36.888697,
+    "longitude": 30.71944269999999,
+    "note": "MTG odaklı kafe"
+  },
+  {
+    "id": 33,
+    "name": "d20 Masaüstü Oyun Kulübü",
+    "products": {
+      "pokemonEN": false,
+      "pokemonJP": false,
+      "pokemonKR": false,
+      "pokemonCN": false,
+      "onePieceEN": false,
+      "onePieceJP": false,
+      "mtg": true,
+      "riftboundEN": false,
+      "riftboundCN": false,
+      "lorcana": false,
+      "topps": false,
+      "yugioh": false
+    },
+    "website": null,
+    "location": "İzmir Karşıyaka",
+    "city": "İzmir",
+    "hasPhysicalStore": true,
+    "latitude": 38.46249,
+    "longitude": 27.12618,
+    "note": "MTG odaklı kulüp"
   }
 ]
-

@@ -22,6 +22,8 @@ export interface Store {
   city: string | null;
   hasPhysicalStore: boolean;
   note?: string;
+  latitude?: number;
+  longitude?: number;
 }
 
 export type ProductKey = keyof StoreProducts;

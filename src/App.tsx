@@ -3,14 +3,30 @@ import { FilterBar } from './components/FilterBar';
 import { Header } from './components/Header';
 import { StoreList } from './components/StoreList';
 import storesData from './data/stores.json';
+import { useGeolocation } from './hooks/useGeolocation';
 import type { ProductKey, Store } from './types/store';
+import { calculateDistance, type Coordinates } from './utils/distance';
 
 const stores = storesData as Store[];
+
+export interface StoreWithDistance extends Store {
+  distance?: number;
+}
 
 function App() {
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [selectedStoreType, setSelectedStoreType] = useState<'all' | 'physical' | 'online'>('all');
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
+  const [sortByDistance, setSortByDistance] = useState(false);
+
+  const {
+    location: userLocation,
+    status: locationStatus,
+    error: locationError,
+    requestLocation,
+    clearLocation,
+    setManualLocation,
+  } = useGeolocation();
 
   // Şehirlerin listesini çıkar
   const cities = useMemo(() => {
@@ -23,9 +39,25 @@ function App() {
     return Array.from(citySet).sort();
   }, []);
 
-  // Filtreleme işlemi
+  // Calculate distances and filter stores
   const filteredStores = useMemo(() => {
-    return stores.filter((store) => {
+    let result: StoreWithDistance[] = stores.map((store) => {
+      const storeWithDistance: StoreWithDistance = { ...store };
+
+      // Calculate distance if user location and store coordinates are available
+      if (userLocation && store.latitude && store.longitude) {
+        const storeCoords: Coordinates = {
+          latitude: store.latitude,
+          longitude: store.longitude,
+        };
+        storeWithDistance.distance = calculateDistance(userLocation, storeCoords);
+      }
+
+      return storeWithDistance;
+    });
+
+    // Apply filters
+    result = result.filter((store) => {
       // Şehir filtresi
       if (selectedCity && store.city !== selectedCity) {
         return false;
@@ -51,7 +83,20 @@ function App() {
 
       return true;
     });
-  }, [selectedCity, selectedStoreType, selectedProducts]);
+
+    // Sort by distance if enabled and user location is available
+    if (sortByDistance && userLocation) {
+      result.sort((a, b) => {
+        // Stores with coordinates come first
+        if (a.distance === undefined && b.distance === undefined) return 0;
+        if (a.distance === undefined) return 1;
+        if (b.distance === undefined) return -1;
+        return a.distance - b.distance;
+      });
+    }
+
+    return result;
+  }, [selectedCity, selectedStoreType, selectedProducts, userLocation, sortByDistance]);
 
   const handleProductToggle = (productKey: string) => {
     setSelectedProducts((prev) =>
@@ -65,12 +110,29 @@ function App() {
     setSelectedCity(null);
     setSelectedStoreType('all');
     setSelectedProducts([]);
+    setSortByDistance(false);
+    clearLocation();
+  };
+
+  const handleLocationRequest = () => {
+    requestLocation();
+    setSortByDistance(true);
+  };
+
+  const handleManualLocationSelect = (coords: Coordinates) => {
+    setManualLocation(coords);
+    setSortByDistance(true);
+  };
+
+  const handleClearLocation = () => {
+    clearLocation();
+    setSortByDistance(false);
   };
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <Header />
-      
+
       <main className="max-w-7xl mx-auto px-4 py-8 pb-20">
         <div className="flex flex-col lg:flex-row gap-8">
           <FilterBar
@@ -84,10 +146,19 @@ function App() {
             onClearFilters={handleClearFilters}
             totalCount={stores.length}
             filteredCount={filteredStores.length}
+            // Location props
+            userLocation={userLocation}
+            locationStatus={locationStatus}
+            locationError={locationError}
+            sortByDistance={sortByDistance}
+            onSortByDistanceChange={setSortByDistance}
+            onRequestLocation={handleLocationRequest}
+            onClearLocation={handleClearLocation}
+            onManualLocationSelect={handleManualLocationSelect}
           />
-          
+
           <div className="flex-1 min-w-0">
-            <StoreList stores={filteredStores} />
+            <StoreList stores={filteredStores} userLocation={userLocation} />
           </div>
         </div>
       </main>
@@ -101,7 +172,7 @@ function App() {
               <span className="text-white font-medium">23 Kasım 2025</span>
             </p>
             <p className="text-slate-500 text-xs max-w-2xl mx-auto">
-              Listede bulunan hiçbir firma reklam veya referans amaçlı yazılmamıştır. 
+              Listede bulunan hiçbir firma reklam veya referans amaçlı yazılmamıştır.
               Bilgilendirme amaçlıdır. Liste sıralaması tamamen rastgele yapılmıştır.
             </p>
             <p className="text-slate-500 text-xs">
@@ -126,7 +197,7 @@ function App() {
                 <span className="text-sm">Listeyi Hazırlayanlara Kahve Ismarla</span>
               </a>
             </div>
-            
+
             {/* Credits */}
             <div className="pt-6 border-t border-slate-800 mt-6">
               <p className="text-slate-500 text-xs mb-2">Bu uygulamayı geliştirdi:</p>
