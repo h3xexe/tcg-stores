@@ -142,54 +142,109 @@ function StorePopup({ store }: { store: StoreWithDistance }) {
   const availableProducts = PRODUCTS.filter((p) => store.products[p.key] === true);
 
   return (
-    <div className="min-w-[200px] max-w-[280px]">
-      <h3 className="font-bold text-slate-900 text-base mb-1">{store.name}</h3>
+    <div style={{ minWidth: '220px', maxWidth: '300px' }}>
+      <h3 style={{ fontWeight: 'bold', color: '#1e293b', fontSize: '16px', marginBottom: '4px' }}>
+        {store.name}
+      </h3>
 
       {store.distance !== undefined && (
-        <div className="text-emerald-600 text-sm font-medium mb-2">
+        <div style={{ color: '#059669', fontSize: '14px', fontWeight: 500, marginBottom: '8px' }}>
           📍 {formatDistance(store.distance)}
         </div>
       )}
 
       {store.location && (
-        <p className="text-slate-600 text-sm mb-2">{store.location}</p>
+        <p style={{ color: '#475569', fontSize: '14px', marginBottom: '8px' }}>{store.location}</p>
       )}
 
-      <div className="flex items-center gap-2 mb-2">
-        <span className={`px-2 py-0.5 rounded text-xs font-medium ${
-          store.hasPhysicalStore
-            ? 'bg-emerald-100 text-emerald-700'
-            : 'bg-blue-100 text-blue-700'
-        }`}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+        <span
+          style={{
+            padding: '2px 8px',
+            borderRadius: '4px',
+            fontSize: '12px',
+            fontWeight: 500,
+            backgroundColor: store.hasPhysicalStore ? '#d1fae5' : '#dbeafe',
+            color: store.hasPhysicalStore ? '#047857' : '#1d4ed8',
+          }}
+        >
           {store.hasPhysicalStore ? '🏪 Fiziksel' : '🌐 Online'}
         </span>
       </div>
 
       {availableProducts.length > 0 && (
-        <div className="flex flex-wrap gap-1 mb-3">
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px', marginBottom: '12px' }}>
           {availableProducts.slice(0, 5).map((p) => (
-            <span key={p.key} className="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded text-xs">
+            <span
+              key={p.key}
+              style={{
+                padding: '2px 6px',
+                backgroundColor: '#f1f5f9',
+                color: '#475569',
+                borderRadius: '4px',
+                fontSize: '11px',
+              }}
+            >
               {p.label.split(' ')[0]}
             </span>
           ))}
           {availableProducts.length > 5 && (
-            <span className="px-1.5 py-0.5 bg-slate-100 text-slate-500 rounded text-xs">
+            <span
+              style={{
+                padding: '2px 6px',
+                backgroundColor: '#f1f5f9',
+                color: '#64748b',
+                borderRadius: '4px',
+                fontSize: '11px',
+              }}
+            >
               +{availableProducts.length - 5}
             </span>
           )}
         </div>
       )}
 
-      {store.website && (
-        <a
-          href={store.website.startsWith('http') ? store.website : `https://${store.website}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-3 py-1.5 bg-purple-600 hover:bg-purple-500 text-white text-xs font-medium rounded transition-colors"
-        >
-          Siteye Git →
-        </a>
-      )}
+      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+        {store.website && (
+          <a
+            href={store.website.startsWith('http') ? store.website : `https://${store.website}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              padding: '8px 12px',
+              backgroundColor: '#9333ea',
+              color: '#ffffff',
+              fontSize: '12px',
+              fontWeight: 600,
+              borderRadius: '6px',
+              textDecoration: 'none',
+            }}
+          >
+            Siteye Git →
+          </a>
+        )}
+
+        {store.mapsUrl && (
+          <a
+            href={store.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              padding: '8px 12px',
+              backgroundColor: '#059669',
+              color: '#ffffff',
+              fontSize: '12px',
+              fontWeight: 600,
+              borderRadius: '6px',
+              textDecoration: 'none',
+            }}
+          >
+            📍 Google Maps
+          </a>
+        )}
+      </div>
     </div>
   );
 }
