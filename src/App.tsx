@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { FilterBar } from './components/FilterBar';
 import { Header } from './components/Header';
+import { MapView } from './components/MapView';
 import { StoreList } from './components/StoreList';
 import storesData from './data/stores.json';
 import { useGeolocation } from './hooks/useGeolocation';
@@ -13,11 +14,14 @@ export interface StoreWithDistance extends Store {
   distance?: number;
 }
 
+export type ViewMode = 'list' | 'map';
+
 function App() {
   const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [selectedStoreType, setSelectedStoreType] = useState<'all' | 'physical' | 'online'>('all');
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
   const [sortByDistance, setSortByDistance] = useState(false);
+  const [viewMode, setViewMode] = useState<ViewMode>('list');
 
   const {
     location: userLocation,
@@ -155,10 +159,17 @@ function App() {
             onRequestLocation={handleLocationRequest}
             onClearLocation={handleClearLocation}
             onManualLocationSelect={handleManualLocationSelect}
+            // View mode props
+            viewMode={viewMode}
+            onViewModeChange={setViewMode}
           />
 
           <div className="flex-1 min-w-0">
-            <StoreList stores={filteredStores} userLocation={userLocation} />
+            {viewMode === 'list' ? (
+              <StoreList stores={filteredStores} userLocation={userLocation} />
+            ) : (
+              <MapView stores={filteredStores} userLocation={userLocation} />
+            )}
           </div>
         </div>
       </main>

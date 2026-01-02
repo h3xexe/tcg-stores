@@ -1,3 +1,4 @@
+import type { ViewMode } from '../App';
 import type { LocationStatus } from '../hooks/useGeolocation';
 import type { ProductInfo } from '../types/store';
 import { PRODUCT_CATEGORIES, PRODUCTS } from '../types/store';
@@ -23,6 +24,9 @@ interface FilterBarProps {
   onRequestLocation: () => void;
   onClearLocation: () => void;
   onManualLocationSelect: (coords: Coordinates) => void;
+  // View mode props
+  viewMode: ViewMode;
+  onViewModeChange: (mode: ViewMode) => void;
 }
 
 export function FilterBar({
@@ -44,6 +48,8 @@ export function FilterBar({
   onRequestLocation,
   onClearLocation,
   onManualLocationSelect,
+  viewMode,
+  onViewModeChange,
 }: FilterBarProps) {
   const hasActiveFilters =
     selectedCity || selectedStoreType !== 'all' || selectedProducts.length > 0 || userLocation;
@@ -89,6 +95,49 @@ export function FilterBar({
           <div className="text-sm text-slate-400">
             <span className="text-2xl font-bold text-white">{filteredCount}</span>
             <span className="ml-1">/ {totalCount} mağaza</span>
+          </div>
+        </div>
+
+        {/* View Mode Toggle */}
+        <div className="p-4 rounded-xl bg-slate-800/50 border border-slate-700/50 space-y-3">
+          <label className="block text-sm font-semibold text-slate-300">👁️ Görünüm</label>
+          <div className="flex gap-2">
+            <button
+              onClick={() => onViewModeChange('list')}
+              className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
+                viewMode === 'list'
+                  ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/25'
+                  : 'bg-slate-700/50 text-slate-400 hover:bg-slate-700 hover:text-white'
+              }`}
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                />
+              </svg>
+              Liste
+            </button>
+            <button
+              onClick={() => onViewModeChange('map')}
+              className={`flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-all ${
+                viewMode === 'map'
+                  ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/25'
+                  : 'bg-slate-700/50 text-slate-400 hover:bg-slate-700 hover:text-white'
+              }`}
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                />
+              </svg>
+              Harita
+            </button>
           </div>
         </div>
 
